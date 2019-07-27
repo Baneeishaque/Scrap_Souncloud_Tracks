@@ -1,0 +1,4 @@
+cssutils
+BeautifulSoup
+selenium
+typing
