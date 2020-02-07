@@ -1,7 +1,8 @@
-from BeautifulSoup import BeautifulSoup, Tag
+from typing import List, Any, Union
+
+from bs4 import BeautifulSoup, Tag
 from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
-from typing import List, Any, Union
 
 from beautifulSoupUtils import get_div_elements_by_class_attribute
 from beautifulSoupUtils import get_first_anchor_element_by_class_attribute
@@ -23,7 +24,7 @@ for soundBody in get_div_elements_by_class_attribute(beautifulSoapContent, 'soun
     # print "sound__coverArt Element : " + str(coverArtElement)
 
     trackPage = "https://soundcloud.com" + coverArtElement.get('href')  # type: Union[Union[str, unicode], Any]
-    print "Track Page : " + trackPage
+    print("Track Page : " + trackPage)
 
     # TODO : Wait to load Cover Arts
     # coverArtUrl = get_backgroundImage_url(

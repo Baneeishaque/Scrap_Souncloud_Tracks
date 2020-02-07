@@ -1,5 +1,5 @@
 import cssutils
-from BeautifulSoup import Tag
+from bs4 import Tag
 
 
 def get_backgroundImage_url(tag):

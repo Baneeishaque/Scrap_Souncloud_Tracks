@@ -1,4 +1,4 @@
-from BeautifulSoup import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, Tag
 
 
 def get_div_elements_by_class_attribute(beautiful_soup, class_name):
